@@ -304,7 +304,7 @@ function() {
             // img.slicing(anode, anode.name, 1916, active_planes=[], masked_planes=[0,1],dummy_planes=[2]), // 109*22*4
             img.slicing(anode, anode.name, 4, active_planes=[0,1,2], masked_planes=[],dummy_planes=[]), // 109*22*4
             img.tiling(anode, anode.name),
-            img.solving(anode, anode.name),
+            img.solving(anode, anode.name, "full"),
             // img.clustering(anode, anode.name),
             img.dump(anode, anode.name, params.lar.drift_speed),])
     else if multi_slicing == "pdhd1"
